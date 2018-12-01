@@ -6,7 +6,7 @@ import javax.ws.rs.Path;
 @Path("/myrestws")
 public class HelloWorldResource {
 	@GET
-	private String getWelcomeMsg() throws Exception {
-		return "Hola mi Web-Service basado en REST";
+	public String getWelcomeMsg() throws Exception {
+		return "{'nombre':'juan','apellido':'machado','datosCriticos':[{'edad':12}]}";
 	}
 }

@@ -6,12 +6,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="5454" doc:name="HTTP Listener Configuration"/>
-    <flow name="nametransferFlow">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="7676" doc:name="HTTP Listener Configuration"/>
+    <flow name="logicfilterFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="*" doc:name="HTTP"/>
-        <set-payload value="#[message.inboundProperties.'http.request.uri']" doc:name="Set Payload"/>
-        <custom-transformer class="com.org.NameTransfer" doc:name="Java"/>
+        <set-payload value="#[message.inboundProperties.'http.request.path'	]" doc:name="Set Payload"/>
+        <or-filter doc:name="Or">
+            <wildcard-filter pattern="/hi*" caseSensitive="true"/>
+            <wildcard-filter pattern="/hello*" caseSensitive="true"/>
+        </or-filter>
         <component class="com.org.Greeting" doc:name="Java"/>
-        <append-string-transformer message="ESB" doc:name="Append String"/>
     </flow>
 </mule>

@@ -1,0 +1,279 @@
+2018-12-17 11:42:30,213 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mapper'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 11:42:30,406 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-12-17 11:42:30,523 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-12-17 11:42:30,695 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-12-17 11:42:30,696 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-12-17 11:42:30,772 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@69c79f09: startup date [Mon Dec 17 11:42:30 CET 2018]; root of context hierarchy
+2018-12-17 11:42:32,407 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-17 11:42:33,787 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-12-17 11:42:34,172 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-tx-log/tx1.log and /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-tx-log/tx2.log
+2018-12-17 11:42:34,203 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-xa-tx-log/tx1.log and /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-xa-tx-log/tx2.log
+2018-12-17 11:42:34,211 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-12-17 11:42:34,423 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-12-17 11:42:34,428 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mapperFlow
+2018-12-17 11:42:34,428 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@33a55bd8
+2018-12-17 11:42:34,457 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mapperFlow.stage1
+2018-12-17 11:42:35,142 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/juan/Documents/AnypointStudio/workspace/.mule/apps/mapper/mapper.xml'}]"
+2018-12-17 11:42:35,142 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/juan/Documents/AnypointStudio/workspace/.mule/apps/mapper/mapper.xml'}]"
+2018-12-17 11:42:38,276 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mapper'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 11:42:38,279 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-12-17 11:42:38,280 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-12-17 11:42:38,322 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3b1dc579
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-12-17 11:42:38,322 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3b1dc579
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-12-17 11:42:38,324 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-12-17 11:42:38,332 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 11:42:38,336 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-12-17 11:42:38,343 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mapperFlow
+2018-12-17 11:42:38,344 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mapperFlow.stage1
+2018-12-17 11:42:38,371 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: mapperFlow on endpointUri: file:///Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/imput
+2018-12-17 11:42:38,415 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-12-17 11:42:38,422 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-12-17 11:42:38,424 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-12-17 11:42:38,424 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-12-17 11:42:38,499 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-12-17 11:42:38,528 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.mapper:type=Endpoint,service="mapperFlow",connector=connector.file.mule.default,name="endpoint.file.Users.juan.Documents.AnypointStudio.anypointstudio.6.1.2.examples.ITSI2019.mapper.imput"
+2018-12-17 11:42:38,529 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.mapper:type=Endpoint,service="mapperFlow",connector=connector.file.mule.default,name="endpoint.file.Users.juan.Documents.AnypointStudio.anypointstudio.6.1.2.examples.ITSI2019.mapper.imput"
+2018-12-17 11:42:38,530 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.mapper:type=Connector,name="connector.file.mule.default.1"
+2018-12-17 11:42:38,535 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: mapper                                                *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-12-17 11:42:39,436 [[mapper].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: /Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/imput/.DS_Store
+2018-12-17 11:42:39,474 [[mapper].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: /Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/imput/employee.csv
+2018-12-17 11:51:51,805 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mapper'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 11:51:52,017 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-12-17 11:51:52,148 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-12-17 11:51:52,373 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-12-17 11:51:52,373 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-12-17 11:51:52,448 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@69c79f09: startup date [Mon Dec 17 11:51:52 CET 2018]; root of context hierarchy
+2018-12-17 11:51:54,306 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-17 11:51:55,757 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-12-17 11:51:56,054 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-tx-log/tx1.log and /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-tx-log/tx2.log
+2018-12-17 11:51:56,075 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-xa-tx-log/tx1.log and /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-xa-tx-log/tx2.log
+2018-12-17 11:51:56,082 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-12-17 11:51:56,273 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-12-17 11:51:56,281 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mapperFlow
+2018-12-17 11:51:56,282 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@a83495d
+2018-12-17 11:51:56,308 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mapperFlow.stage1
+2018-12-17 11:51:57,024 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/juan/Documents/AnypointStudio/workspace/.mule/apps/mapper/mapper.xml'}]"
+2018-12-17 11:51:57,024 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/juan/Documents/AnypointStudio/workspace/.mule/apps/mapper/mapper.xml'}]"
+2018-12-17 11:52:00,200 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mapper'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 11:52:00,205 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-12-17 11:52:00,205 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-12-17 11:52:00,231 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3b7eac14
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-12-17 11:52:00,231 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3b7eac14
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-12-17 11:52:00,232 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-12-17 11:52:00,236 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 11:52:00,245 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-12-17 11:52:00,247 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mapperFlow
+2018-12-17 11:52:00,248 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mapperFlow.stage1
+2018-12-17 11:52:00,259 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: mapperFlow on endpointUri: file:///Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/imput
+2018-12-17 11:52:00,304 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-12-17 11:52:00,311 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-12-17 11:52:00,312 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-12-17 11:52:00,315 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-12-17 11:52:00,392 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-12-17 11:52:00,420 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.mapper:type=Endpoint,service="mapperFlow",connector=connector.file.mule.default,name="endpoint.file.Users.juan.Documents.AnypointStudio.anypointstudio.6.1.2.examples.ITSI2019.mapper.imput"
+2018-12-17 11:52:00,421 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.mapper:type=Endpoint,service="mapperFlow",connector=connector.file.mule.default,name="endpoint.file.Users.juan.Documents.AnypointStudio.anypointstudio.6.1.2.examples.ITSI2019.mapper.imput"
+2018-12-17 11:52:00,422 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.mapper:type=Connector,name="connector.file.mule.default.1"
+2018-12-17 11:52:00,426 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: mapper                                                *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-12-17 12:07:06,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'mapper'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 12:07:06,235 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: mapperFlow
+2018-12-17 12:07:06,236 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/imput
+2018-12-17 12:07:06,241 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2018-12-17 12:07:06,247 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2018-12-17 12:07:06,249 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: mapperFlow.stage1
+2018-12-17 12:07:06,440 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-12-17 12:07:06,449 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2018-12-17 12:07:06,453 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-12-17 12:07:06,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-12-17 12:07:06,468 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'mapper'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 12:07:06,469 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-12-17 12:07:06,472 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: mapperFlow
+2018-12-17 12:07:06,473 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: mapperFlow.stage1
+2018-12-17 12:07:06,490 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-12-17 12:07:06,500 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=3b7eac14
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-12-17 12:07:06,501 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2018-12-17 12:07:07,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@69c79f09: startup date [Mon Dec 17 11:51:52 CET 2018]; root of context hierarchy
+2018-12-17 12:07:07,233 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "mapper" shut down normally on: 12/17/18 12:07 PM      *
+* Up for: 0 days, 0 hours, 15 mins, 7.27 sec                         *
+**********************************************************************
+2018-12-17 12:07:07,651 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mapper'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 12:07:07,673 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app mapper
+2018-12-17 12:07:07,678 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-12-17 12:07:07,688 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-12-17 12:07:07,711 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-12-17 12:07:07,711 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-12-17 12:07:07,717 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@783c8536: startup date [Mon Dec 17 12:07:07 CET 2018]; root of context hierarchy
+2018-12-17 12:07:08,571 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-17 12:07:09,203 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-tx-log/tx1.log and /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-tx-log/tx2.log
+2018-12-17 12:07:09,204 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-xa-tx-log/tx1.log and /Users/juan/Documents/AnypointStudio/workspace/.mule/./.mule/mapper/queue-xa-tx-log/tx2.log
+2018-12-17 12:07:09,206 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-12-17 12:07:09,285 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-12-17 12:07:09,287 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mapperFlow
+2018-12-17 12:07:09,288 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@dfef30e
+2018-12-17 12:07:09,304 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mapperFlow.stage1
+2018-12-17 12:07:09,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/juan/Documents/AnypointStudio/workspace/.mule/apps/mapper/mapper.xml'}]"
+2018-12-17 12:07:09,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/juan/Documents/AnypointStudio/workspace/.mule/apps/mapper/mapper.xml'}]"
+2018-12-17 12:07:12,598 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mapper'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 12:07:12,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-12-17 12:07:12,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-12-17 12:07:12,607 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=438c26a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-12-17 12:07:12,608 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=438c26a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-12-17 12:07:12,608 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-12-17 12:07:12,611 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-12-17 12:07:12,615 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-12-17 12:07:12,616 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mapperFlow
+2018-12-17 12:07:12,616 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mapperFlow.stage1
+2018-12-17 12:07:12,621 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: mapperFlow on endpointUri: file:///Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/imput
+2018-12-17 12:07:12,639 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-12-17 12:07:12,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-12-17 12:07:12,673 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-12-17 12:07:12,673 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-12-17 12:07:12,705 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-12-17 12:07:12,716 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.mapper:type=Endpoint,service="mapperFlow",connector=connector.file.mule.default,name="endpoint.file.Users.juan.Documents.AnypointStudio.anypointstudio.6.1.2.examples.ITSI2019.mapper.imput"
+2018-12-17 12:07:12,717 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.mapper:type=Endpoint,service="mapperFlow",connector=connector.file.mule.default,name="endpoint.file.Users.juan.Documents.AnypointStudio.anypointstudio.6.1.2.examples.ITSI2019.mapper.imput"
+2018-12-17 12:07:12,718 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.mapper:type=Connector,name="connector.file.mule.default.1"
+2018-12-17 12:07:12,728 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: mapper                                                *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************

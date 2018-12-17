@@ -2,7 +2,7 @@
     "inputMessageMetadata": {
         "messagePayload": {
             "connectorName": "#_custom_mule_metadata_type_#",
-            "typeId": "input_id"
+            "typeId": "input_list"
         }
     },
     "outputMessageMetadata": {

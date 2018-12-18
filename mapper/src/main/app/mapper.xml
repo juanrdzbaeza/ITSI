@@ -11,13 +11,18 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
     <db:generic-config name="Generic_Database_Configuration" url="jdbc:postgresql://localhost:5432/S04E06_DB_test?user=postgres&amp;password=root" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>
     <flow name="mapperFlow">
         <file:inbound-endpoint path="/Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/imput" moveToDirectory="/Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/temp" responseTimeout="10000" doc:name="File"/>
-        <dw:transform-message doc:name="Transform Message">
+        <dw:transform-message doc:name="Transform Message" metadata:id="5f216003-560e-4db1-86ca-7fad0532ab16">
+            <dw:input-payload mimeType="application/csv" doc:sample="simple_file/employee.csv"/>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/java
 ---
-{
-	
-}]]></dw:set-payload>
+payload map ((payload01 , indexOfPayload01) -> {
+	empid: payload01.id,
+	empname: payload01.name,
+	empage: payload01.age,
+	empdesignation: payload01.designation
+})]]>
+            </dw:set-payload>
         </dw:transform-message>
         <collection-splitter doc:name="Collection Splitter"/>
         <echo-component doc:name="Echo"/>

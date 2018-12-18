@@ -1,0 +1,564 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>displayLevel</id>
+        <displayName>displayLevel</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+              <name>
+                <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                <localPart>integer</localPart>
+                <prefix></prefix>
+              </name>
+            </org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI></namespaceURI>
+          <localPart>displayLevel</localPart>
+          <prefix></prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:SOAP-ENC=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; targetNamespace=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot;&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;/&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/wsdl/&quot;/&gt;
+ &lt;xsd:complexType name=&quot;weatherParametersType&quot;&gt;
+  &lt;xsd:all&gt;
+   &lt;xsd:element name=&quot;maxt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;mint&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dew&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pop12&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;qpf&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;snow&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wx&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;waveh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;icons&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;rh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;appt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;critfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dryfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;conhazo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;phail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxhail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;precipa_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;td_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wwa&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wgust&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;iceaccum&quot; type=&quot;xsd:boolean&quot;/&gt;
+  &lt;/xsd:all&gt;
+ &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</string>
+          </schemas>
+          <encoding>UTF-8</encoding>
+          <baseUri>file:/Applications/AnypointStudio.app/Contents/MacOS/https:/graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php%3Fwsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map"/>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>dwGmlOut</id>
+        <displayName>dwGmlOut</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+              <name>
+                <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                <localPart>string</localPart>
+                <prefix></prefix>
+              </name>
+            </org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI></namespaceURI>
+          <localPart>dwGmlOut</localPart>
+          <prefix></prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:SOAP-ENC=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; targetNamespace=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot;&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;/&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/wsdl/&quot;/&gt;
+ &lt;xsd:complexType name=&quot;weatherParametersType&quot;&gt;
+  &lt;xsd:all&gt;
+   &lt;xsd:element name=&quot;maxt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;mint&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dew&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pop12&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;qpf&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;snow&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wx&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;waveh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;icons&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;rh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;appt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;critfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dryfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;conhazo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;phail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxhail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;precipa_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;td_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wwa&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wgust&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;iceaccum&quot; type=&quot;xsd:boolean&quot;/&gt;
+  &lt;/xsd:all&gt;
+ &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/Applications/AnypointStudio.app/Contents/MacOS/https:/graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php%3Fwsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map"/>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>listLatLonOut</id>
+        <displayName>listLatLonOut</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+              <name>
+                <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                <localPart>string</localPart>
+                <prefix></prefix>
+              </name>
+            </org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>listLatLonOut</id>
+                <displayName>listLatLonOut</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI></namespaceURI>
+          <localPart>listLatLonOut</localPart>
+          <prefix></prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:SOAP-ENC=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; targetNamespace=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot;&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;/&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/wsdl/&quot;/&gt;
+ &lt;xsd:complexType name=&quot;weatherParametersType&quot;&gt;
+  &lt;xsd:all&gt;
+   &lt;xsd:element name=&quot;maxt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;mint&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dew&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pop12&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;qpf&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;snow&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wx&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;waveh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;icons&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;rh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;appt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;critfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dryfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;conhazo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;phail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxhail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;precipa_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;td_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wwa&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wgust&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;iceaccum&quot; type=&quot;xsd:boolean&quot;/&gt;
+  &lt;/xsd:all&gt;
+ &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/Applications/AnypointStudio.app/Contents/MacOS/https:/graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php%3Fwsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map"/>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>requestedTime</id>
+        <displayName>requestedTime</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+              <name>
+                <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                <localPart>dateTime</localPart>
+                <prefix></prefix>
+              </name>
+            </org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI></namespaceURI>
+          <localPart>requestedTime</localPart>
+          <prefix></prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:SOAP-ENC=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; targetNamespace=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot;&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;/&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/wsdl/&quot;/&gt;
+ &lt;xsd:complexType name=&quot;weatherParametersType&quot;&gt;
+  &lt;xsd:all&gt;
+   &lt;xsd:element name=&quot;maxt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;mint&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dew&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pop12&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;qpf&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;snow&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wx&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;waveh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;icons&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;rh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;appt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;critfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dryfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;conhazo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;phail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxhail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;precipa_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;td_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wwa&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wgust&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;iceaccum&quot; type=&quot;xsd:boolean&quot;/&gt;
+  &lt;/xsd:all&gt;
+ &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/Applications/AnypointStudio.app/Contents/MacOS/https:/graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php%3Fwsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map"/>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>sector</id>
+        <displayName>sector</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+              <name>
+                <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                <localPart>string</localPart>
+                <prefix></prefix>
+              </name>
+            </org.mule.common.metadata.property.xml.XsiTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>sector</id>
+                <displayName>sector</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI></namespaceURI>
+          <localPart>sector</localPart>
+          <prefix></prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:SOAP-ENC=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; targetNamespace=&quot;https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl&quot;&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;/&gt;
+ &lt;xsd:import namespace=&quot;http://schemas.xmlsoap.org/wsdl/&quot;/&gt;
+ &lt;xsd:complexType name=&quot;weatherParametersType&quot;&gt;
+  &lt;xsd:all&gt;
+   &lt;xsd:element name=&quot;maxt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;mint&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dew&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pop12&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;qpf&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;snow&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wx&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;waveh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;icons&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;rh&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;appt&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;incw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw34&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw50&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;cumw64&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;critfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;dryfireo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;conhazo&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;phail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtornado&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxhail&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtstmwinds&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;ptotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;pxtotsvrtstm&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;tmpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw14d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw30d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpabv90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;prcpblw90d&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;precipa_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;sky_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;temp_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;td_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wdir_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wspd_r&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wwa&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;wgust&quot; type=&quot;xsd:boolean&quot;/&gt;
+   &lt;xsd:element name=&quot;iceaccum&quot; type=&quot;xsd:boolean&quot;/&gt;
+  &lt;/xsd:all&gt;
+ &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/Applications/AnypointStudio.app/Contents/MacOS/https:/graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php%3Fwsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map"/>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>Web_Service_Consumer</connectorName>
+</metadata__catalog__entry>

@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "Web_Service_Consumer",
+            "typeId": "listLatLonOut"
+        }
+    },
+    "outputMessageMetadata": {},
+    "id": "776eadfc-8ab6-4810-9037-43b2fea55e7d",
+    "version": "5.2.0.0"
+}

@@ -11,6 +11,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
         <http:listener config-ref="HTTP_Listener_Configuration" path="*" doc:name="HTTP"/>
         <set-payload value="#[message.inboundProperties.'http.request.path']" doc:name="Set Payload"/>
         <wildcard-filter pattern="/Mule*" caseSensitive="true" doc:name="Wildcard"/>
-        <custom-transformer class="com.org.HTTPReqToUser" doc:name="Java"/>
+        <custom-transformer class="com.org.HTTPReqToName" doc:name="Java"/>
     </flow>
 </mule>

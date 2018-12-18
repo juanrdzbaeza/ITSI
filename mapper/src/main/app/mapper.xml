@@ -16,6 +16,7 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
 %output application/java
 ---
 {
+	
 }]]></dw:set-payload>
         </dw:transform-message>
         <collection-splitter doc:name="Collection Splitter"/>

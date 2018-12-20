@@ -3,231 +3,24 @@
   <connectorName>Web_Service_Consumer</connectorName>
   <metadataIo class="tree-map">
     <entry>
-      <string>CornerPoints</string>
-      <map>
-        <entry>
-          <string>__default__</string>
-          <org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry>
-            <input class="org.mule.common.metadata.DefaultMetaData">
-              <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
-                <connectorName>Web_Service_Consumer</connectorName>
-                <typeId>sector</typeId>
-                <category>DEFAULT</category>
-              </payload>
-              <properties class="tree-map">
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>FLOW</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>INBOUND</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>OUTBOUND</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>SESSION</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>RECORD</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-              </properties>
-            </input>
-            <output class="org.mule.common.metadata.DefaultMetaData">
-              <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
-                <connectorName>Web_Service_Consumer</connectorName>
-                <typeId>listLatLonOut</typeId>
-                <category>DEFAULT</category>
-              </payload>
-              <properties class="tree-map">
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>FLOW</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>INBOUND</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>OUTBOUND</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>SESSION</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>RECORD</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-              </properties>
-            </output>
-          </org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry>
-        </entry>
-      </map>
-    </entry>
-    <entry>
-      <string>GmlLatLonList</string>
-      <map>
-        <entry>
-          <string>__default__</string>
-          <org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry>
-            <input class="org.mule.common.metadata.DefaultMetaData">
-              <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
-                <connectorName>Web_Service_Consumer</connectorName>
-                <typeId>requestedTime</typeId>
-                <category>DEFAULT</category>
-              </payload>
-              <properties class="tree-map">
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>FLOW</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>INBOUND</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>OUTBOUND</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>SESSION</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>RECORD</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-              </properties>
-            </input>
-            <output class="org.mule.common.metadata.DefaultMetaData">
-              <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
-                <connectorName>Web_Service_Consumer</connectorName>
-                <typeId>dwGmlOut</typeId>
-                <category>DEFAULT</category>
-              </payload>
-              <properties class="tree-map">
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>FLOW</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>INBOUND</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>OUTBOUND</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>SESSION</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-                <entry>
-                  <org.mule.common.metadata.MetaDataPropertyScope>RECORD</org.mule.common.metadata.MetaDataPropertyScope>
-                  <org.mule.common.metadata.MetaDataProperties>
-                    <fields class="sorted-set">
-                      <comparator class="org.mule.common.metadata.MetaDataProperties$MetaDataFieldComparator"/>
-                    </fields>
-                  </org.mule.common.metadata.MetaDataProperties>
-                </entry>
-              </properties>
-            </output>
-          </org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry>
-        </entry>
-      </map>
-    </entry>
-    <entry>
       <string>LatLonListCityNames</string>
       <map>
         <entry>
           <string>__default__</string>
+          <org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry/>
+        </entry>
+      </map>
+    </entry>
+    <entry>
+      <string>getPerson</string>
+      <map>
+        <entry>
+          <string>__default__</string>
           <org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry>
             <input class="org.mule.common.metadata.DefaultMetaData">
               <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
                 <connectorName>Web_Service_Consumer</connectorName>
-                <typeId>displayLevel</typeId>
+                <typeId>getPerson</typeId>
                 <category>DEFAULT</category>
               </payload>
               <properties class="tree-map">
@@ -276,7 +69,7 @@
             <output class="org.mule.common.metadata.DefaultMetaData">
               <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
                 <connectorName>Web_Service_Consumer</connectorName>
-                <typeId>listLatLonOut</typeId>
+                <typeId>getPersonResponse</typeId>
                 <category>DEFAULT</category>
               </payload>
               <properties class="tree-map">

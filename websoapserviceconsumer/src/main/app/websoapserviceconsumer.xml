@@ -9,9 +9,20 @@ http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/cu
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
-    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php?wsdl" service="ndfdXML" port="ndfdXMLPort" serviceAddress="https://graphical.weather.gov:443/xml/SOAP_server/ndfdXMLserver.php" doc:name="Web Service Consumer"/>
+    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="http://192.168.66.83:8080/SOAPExample/services/PersonServiceImpl?wsdl" service="PersonServiceImplService" port="PersonServiceImpl" serviceAddress="http://192.168.66.83:8080/SOAPExample/services/PersonServiceImpl" doc:name="Web Service Consumer"/>
     <flow name="websoapserviceconsumerFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/sample_soap" doc:name="HTTP"/>
-        <ws:consumer config-ref="Web_Service_Consumer" operation="LatLonListCityNames" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://org.com
+---
+{
+	ns0#getPerson: {
+		ns0#id: 1
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getPerson" doc:name="Web Service Consumer"/>
     </flow>
 </mule>

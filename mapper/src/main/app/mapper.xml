@@ -8,10 +8,13 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
 http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+    <db:generic-config name="Generic_Database_Configuration" url="jdbc:postgresql://localhost:5432/S04E06_DB_test?user=postgres&amp;password=root" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>
     <flow name="mapperFlow">
         <file:inbound-endpoint path="/Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/imput" moveToDirectory="/Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/mapper/temp" responseTimeout="10000" doc:name="File"/>
         <dw:transform-message doc:name="Transform Message" metadata:id="de645aad-413b-414c-94df-8e1759747d51">
-            <dw:input-payload doc:sample="simple_files/employee.csv" mimeType="application/csv"/>
+            <dw:input-payload doc:sample="simple_files/employee.csv" mimeType="application/csv">
+                <dw:reader-property name="separator" value=";"/>
+            </dw:input-payload>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/java
 ---
@@ -22,5 +25,11 @@ payload map ((payload01 , indexOfPayload01) -> {
 	empdesignation: payload01.designation
 })]]></dw:set-payload>
         </dw:transform-message>
+        <collection-splitter doc:name="Collection Splitter"/>
+        <echo-component doc:name="Echo"/>
+        <db:insert config-ref="Generic_Database_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[INSERT INTO tblemployee (empid,empname,empage,empdesignation)
+VALUES (#[message.payload.empid],#[message.payload.empname],#[message.payload.empage],#[message.payload.empdesignation])]]></db:parameterized-query>
+        </db:insert>
     </flow>
 </mule>

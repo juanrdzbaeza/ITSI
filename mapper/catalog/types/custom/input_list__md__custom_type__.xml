@@ -19,7 +19,7 @@
           <delimiter>;</delimiter>
           <rowsToIgnore>0</rowsToIgnore>
           <quotedString>false</quotedString>
-          <relativePath>true</relativePath>
+          <relativePath>false</relativePath>
           <quoteChar>&quot;</quoteChar>
         </org.mule.tooling.metadata.properties.CSVSampleSettingsMetadataProperties>
         <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty>

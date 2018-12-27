@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.8.2"
+<mule xmlns:oauth2="http://www.mulesoft.org/schema/mule/oauth2" xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
-http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd"></mule>
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/oauth2 http://www.mulesoft.org/schema/mule/oauth2/current/mule-oauth2.xsd
+http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd">
+    <file:connector name="File" writeToDirectory="/Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/webREST/tmp" autoDelete="true" streaming="true" validateConnections="true" doc:name="File"/>
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8081" doc:name="HTTP Listener Configuration"/>
+    <http:request-config name="HTTP_Request_Configuration" host="api.openweathermap.org" port="80" doc:name="HTTP Request Configuration"/>
+    <flow name="webrestserviceconsumerFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="*" doc:name="HTTP"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="/data/2.5/weather?q=Madrid&amp;APPID=aad3fc037305de955a9c05331acc7e02" method="GET" doc:name="HTTP"/>
+        <file:outbound-endpoint responseTimeout="10000" doc:name="File" connector-ref="File" outputPattern="output.json" path="/Users/juan/Documents/AnypointStudio/anypointstudio_6_1_2/examples_ITSI2019/webREST/output"/>
+    </flow>
+</mule>

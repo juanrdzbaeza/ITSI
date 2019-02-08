@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <flow name="choicerouterFlow">
+        <file:inbound-endpoint path="/Users/juan/Documents/anypointstudio_6_1_2/examples_ITSI2019/choicerouter/input" moveToDirectory="/Users/juan/Documents/anypointstudio_6_1_2/examples_ITSI2019/choicerouter/temp" responseTimeout="10000" doc:name="File"/>
+        <choice doc:name="Choice">
+            <when expression="#[message.inboundProperties['originalFilename'].endsWith('.ppt')]">
+                <file:outbound-endpoint responseTimeout="10000" doc:name="Only Ppt Files" path="/Users/juan/Documents/anypointstudio_6_1_2/examples_ITSI2019/choicerouter/output/ppt"/>
+            </when>
+            <when expression="#[message.inboundProperties['originalFilename'].endsWith('.txt')]">
+                <file:outbound-endpoint responseTimeout="10000" doc:name="Only Text Files" path="/Users/juan/Documents/anypointstudio_6_1_2/examples_ITSI2019/choicerouter/output/text"/>
+            </when>
+            <when expression="#[message.inboundProperties['originalFilename'].endsWith('.zip')]">
+                <file:outbound-endpoint responseTimeout="10000" doc:name="Only Zip Files" path="/Users/juan/Documents/anypointstudio_6_1_2/examples_ITSI2019/choicerouter/output/zip"/>
+            </when>
+            <otherwise>
+                <logger level="INFO" doc:name="Logger"/>
+            </otherwise>
+        </choice>
+    </flow>
+</mule>

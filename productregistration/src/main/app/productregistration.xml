@@ -7,7 +7,7 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd">
-    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8080" basePath="/products" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8080"  doc:name="HTTP Listener Configuration"/>
     <jms:activemq-connector name="Active_MQ" specification="1.1" brokerURL="tcp://localhost:61616" validateConnections="true" doc:name="Active MQ"/>
     <flow name="productregistrationFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/products" doc:name="HTTP"/>
